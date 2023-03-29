@@ -3,22 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-let Item1
-let Item2
-let Item3
-const items = [Item1, Item2, Item3];
-const listItems = items.map((item) =>
-  <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-  </ul>
-);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ul>{listItems}</ul>,
-    <App />
+  <App user="Nom" date={Date()} />;
+  <App />
   </React.StrictMode>
 );
 
